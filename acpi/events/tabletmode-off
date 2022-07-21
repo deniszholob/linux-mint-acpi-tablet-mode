@@ -1,0 +1,2 @@
+event=video/tabletmode TBLT 0000008A 00000001
+action=/etc/acpi/tabletmode-switch.sh 1
