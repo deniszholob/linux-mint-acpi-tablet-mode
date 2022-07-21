@@ -5,7 +5,7 @@ Laptop auto turn on/off onscreen keyboard app "onboard"
 * Copy ./acpi contents in your linux mint /etc/acpi/ folder
 * Make sure the .sh file has execute permissions
   ![Script Permissions](screenshots/sh-permissions.png)
-* run `sudo systemctl restart acpid.service` to restart the service
+* run `sudo systemctl restart acpid.service` or `sudo /etc/init.d/acpid reload` to restart the service
 
 Notes:
 As of rn i am getting the `acpi/events/tabletmode` working with `acpi/tabletmode.sh` but only when going from tablet mode that closes the OSK, for some reason the command to open the `onboard` isnt working through the event, even though works when using excecuting sript manually...
